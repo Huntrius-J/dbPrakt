@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/insert">
+
+    <fragment
+        android:id="@+id/insert"
+        android:name="com.example.dbprakt.insert"
+        android:label="fragment_insert"
+        tools:layout="@layout/fragment_insert" >
+        <action
+            android:id="@+id/action_insert_to_get"
+            app:destination="@id/get" />
+    </fragment>
+    <fragment
+        android:id="@+id/get"
+        android:name="com.example.dbprakt.get"
+        android:label="fragment_get"
+        tools:layout="@layout/fragment_get" />
+</navigation>
